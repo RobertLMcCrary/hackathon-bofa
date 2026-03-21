@@ -1,13 +1,15 @@
 import SwiftUI
 import Supabase
+import CoreLocation
 
 struct ContentView: View {
+    @ObservedObject var locationManager: LocationManager
     @State var isAuthenticated = false
     
     var body: some View {
         Group {
             if isAuthenticated {
-                ProfileView()
+                TabsView(locationManager: locationManager)
             } else {
                 AuthView()
             }
