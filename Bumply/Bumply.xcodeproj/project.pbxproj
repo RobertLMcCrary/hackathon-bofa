@@ -7,55 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DBBB225C2F6B88E100487F03 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = DBBB225B2F6B88E100487F03 /* Auth */; };
-		DBBB225E2F6B88E100487F03 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = DBBB225D2F6B88E100487F03 /* Functions */; };
-		DBBB22602F6B88E100487F03 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = DBBB225F2F6B88E100487F03 /* PostgREST */; };
-		DBBB22622F6B88E100487F03 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = DBBB22612F6B88E100487F03 /* Realtime */; };
-		DBBB22642F6B88E100487F03 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = DBBB22632F6B88E100487F03 /* Storage */; };
-		DBBB22662F6B88E100487F03 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = DBBB22652F6B88E100487F03 /* Supabase */; };
+		DB7A28B22F6F8D8300215352 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = DB7A28B12F6F8D8300215352 /* Auth */; };
+		DB7A28B42F6F8D8300215352 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = DB7A28B32F6F8D8300215352 /* Functions */; };
+		DB7A28B62F6F8D8300215352 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = DB7A28B52F6F8D8300215352 /* PostgREST */; };
+		DB7A28B82F6F8D8300215352 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = DB7A28B72F6F8D8300215352 /* Realtime */; };
+		DB7A28BA2F6F8D8300215352 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = DB7A28B92F6F8D8300215352 /* Storage */; };
+		DB7A28BC2F6F8D8300215352 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = DB7A28BB2F6F8D8300215352 /* Supabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DBBB224C2F6B85BB00487F03 /* frontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7A28A22F6F8D0B00215352 /* Bumply.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bumply.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DBBB224E2F6B85BB00487F03 /* frontend */ = {
+		DB7A28D82F6F8E0E00215352 /* Bumply */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = frontend;
+			path = Bumply;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DBBB22492F6B85BB00487F03 /* Frameworks */ = {
+		DB7A289F2F6F8D0B00215352 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBBB22602F6B88E100487F03 /* PostgREST in Frameworks */,
-				DBBB225E2F6B88E100487F03 /* Functions in Frameworks */,
-				DBBB22662F6B88E100487F03 /* Supabase in Frameworks */,
-				DBBB225C2F6B88E100487F03 /* Auth in Frameworks */,
-				DBBB22642F6B88E100487F03 /* Storage in Frameworks */,
-				DBBB22622F6B88E100487F03 /* Realtime in Frameworks */,
+				DB7A28B62F6F8D8300215352 /* PostgREST in Frameworks */,
+				DB7A28B42F6F8D8300215352 /* Functions in Frameworks */,
+				DB7A28BC2F6F8D8300215352 /* Supabase in Frameworks */,
+				DB7A28B22F6F8D8300215352 /* Auth in Frameworks */,
+				DB7A28BA2F6F8D8300215352 /* Storage in Frameworks */,
+				DB7A28B82F6F8D8300215352 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DBBB22432F6B85BB00487F03 = {
+		DB7A28992F6F8D0B00215352 = {
 			isa = PBXGroup;
 			children = (
-				DBBB224E2F6B85BB00487F03 /* frontend */,
-				DBBB224D2F6B85BB00487F03 /* Products */,
+				DB7A28D82F6F8E0E00215352 /* Bumply */,
+				DB7A28A32F6F8D0B00215352 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DBBB224D2F6B85BB00487F03 /* Products */ = {
+		DB7A28A32F6F8D0B00215352 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DBBB224C2F6B85BB00487F03 /* frontend.app */,
+				DB7A28A22F6F8D0B00215352 /* Bumply.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,73 +63,73 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DBBB224B2F6B85BB00487F03 /* frontend */ = {
+		DB7A28A12F6F8D0B00215352 /* Bumply */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBBB22572F6B85BD00487F03 /* Build configuration list for PBXNativeTarget "frontend" */;
+			buildConfigurationList = DB7A28AD2F6F8D0E00215352 /* Build configuration list for PBXNativeTarget "Bumply" */;
 			buildPhases = (
-				DBBB22482F6B85BB00487F03 /* Sources */,
-				DBBB22492F6B85BB00487F03 /* Frameworks */,
-				DBBB224A2F6B85BB00487F03 /* Resources */,
+				DB7A289E2F6F8D0B00215352 /* Sources */,
+				DB7A289F2F6F8D0B00215352 /* Frameworks */,
+				DB7A28A02F6F8D0B00215352 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DBBB224E2F6B85BB00487F03 /* frontend */,
+				DB7A28D82F6F8E0E00215352 /* Bumply */,
 			);
-			name = frontend;
+			name = Bumply;
 			packageProductDependencies = (
-				DBBB225B2F6B88E100487F03 /* Auth */,
-				DBBB225D2F6B88E100487F03 /* Functions */,
-				DBBB225F2F6B88E100487F03 /* PostgREST */,
-				DBBB22612F6B88E100487F03 /* Realtime */,
-				DBBB22632F6B88E100487F03 /* Storage */,
-				DBBB22652F6B88E100487F03 /* Supabase */,
+				DB7A28B12F6F8D8300215352 /* Auth */,
+				DB7A28B32F6F8D8300215352 /* Functions */,
+				DB7A28B52F6F8D8300215352 /* PostgREST */,
+				DB7A28B72F6F8D8300215352 /* Realtime */,
+				DB7A28B92F6F8D8300215352 /* Storage */,
+				DB7A28BB2F6F8D8300215352 /* Supabase */,
 			);
-			productName = frontend;
-			productReference = DBBB224C2F6B85BB00487F03 /* frontend.app */;
+			productName = Bumply;
+			productReference = DB7A28A22F6F8D0B00215352 /* Bumply.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DBBB22442F6B85BB00487F03 /* Project object */ = {
+		DB7A289A2F6F8D0B00215352 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2630;
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
-					DBBB224B2F6B85BB00487F03 = {
+					DB7A28A12F6F8D0B00215352 = {
 						CreatedOnToolsVersion = 26.3;
 					};
 				};
 			};
-			buildConfigurationList = DBBB22472F6B85BB00487F03 /* Build configuration list for PBXProject "frontend" */;
+			buildConfigurationList = DB7A289D2F6F8D0B00215352 /* Build configuration list for PBXProject "Bumply" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = DBBB22432F6B85BB00487F03;
+			mainGroup = DB7A28992F6F8D0B00215352;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				DBBB225A2F6B88E100487F03 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				DB7A28B02F6F8D8300215352 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = DBBB224D2F6B85BB00487F03 /* Products */;
+			productRefGroup = DB7A28A32F6F8D0B00215352 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DBBB224B2F6B85BB00487F03 /* frontend */,
+				DB7A28A12F6F8D0B00215352 /* Bumply */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DBBB224A2F6B85BB00487F03 /* Resources */ = {
+		DB7A28A02F6F8D0B00215352 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -139,7 +139,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DBBB22482F6B85BB00487F03 /* Sources */ = {
+		DB7A289E2F6F8D0B00215352 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -149,7 +149,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DBBB22552F6B85BD00487F03 /* Debug */ = {
+		DB7A28AB2F6F8D0E00215352 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +212,7 @@
 			};
 			name = Debug;
 		};
-		DBBB22562F6B85BD00487F03 /* Release */ = {
+		DB7A28AC2F6F8D0E00215352 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +268,7 @@
 			};
 			name = Release;
 		};
-		DBBB22582F6B85BD00487F03 /* Debug */ = {
+		DB7A28AE2F6F8D0E00215352 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -287,7 +287,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertmccrary.frontend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmccrary.Bumply;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -299,7 +299,7 @@
 			};
 			name = Debug;
 		};
-		DBBB22592F6B85BD00487F03 /* Release */ = {
+		DB7A28AF2F6F8D0E00215352 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -318,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertmccrary.frontend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmccrary.Bumply;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -330,112 +330,23 @@
 			};
 			name = Release;
 		};
-		DBBB227A2F6B98E500487F03 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Staging;
-		};
-		DBBB227B2F6B98E500487F03 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertmccrary.frontend;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Staging;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DBBB22472F6B85BB00487F03 /* Build configuration list for PBXProject "frontend" */ = {
+		DB7A289D2F6F8D0B00215352 /* Build configuration list for PBXProject "Bumply" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBBB22552F6B85BD00487F03 /* Debug */,
-				DBBB22562F6B85BD00487F03 /* Release */,
-				DBBB227A2F6B98E500487F03 /* Staging */,
+				DB7A28AB2F6F8D0E00215352 /* Debug */,
+				DB7A28AC2F6F8D0E00215352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBBB22572F6B85BD00487F03 /* Build configuration list for PBXNativeTarget "frontend" */ = {
+		DB7A28AD2F6F8D0E00215352 /* Build configuration list for PBXNativeTarget "Bumply" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBBB22582F6B85BD00487F03 /* Debug */,
-				DBBB22592F6B85BD00487F03 /* Release */,
-				DBBB227B2F6B98E500487F03 /* Staging */,
+				DB7A28AE2F6F8D0E00215352 /* Debug */,
+				DB7A28AF2F6F8D0E00215352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -443,7 +354,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DBBB225A2F6B88E100487F03 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+		DB7A28B02F6F8D8300215352 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/supabase/supabase-swift";
 			requirement = {
@@ -454,37 +365,37 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DBBB225B2F6B88E100487F03 /* Auth */ = {
+		DB7A28B12F6F8D8300215352 /* Auth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DBBB225A2F6B88E100487F03 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = DB7A28B02F6F8D8300215352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Auth;
 		};
-		DBBB225D2F6B88E100487F03 /* Functions */ = {
+		DB7A28B32F6F8D8300215352 /* Functions */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DBBB225A2F6B88E100487F03 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = DB7A28B02F6F8D8300215352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Functions;
 		};
-		DBBB225F2F6B88E100487F03 /* PostgREST */ = {
+		DB7A28B52F6F8D8300215352 /* PostgREST */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DBBB225A2F6B88E100487F03 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = DB7A28B02F6F8D8300215352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = PostgREST;
 		};
-		DBBB22612F6B88E100487F03 /* Realtime */ = {
+		DB7A28B72F6F8D8300215352 /* Realtime */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DBBB225A2F6B88E100487F03 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = DB7A28B02F6F8D8300215352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Realtime;
 		};
-		DBBB22632F6B88E100487F03 /* Storage */ = {
+		DB7A28B92F6F8D8300215352 /* Storage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DBBB225A2F6B88E100487F03 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = DB7A28B02F6F8D8300215352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Storage;
 		};
-		DBBB22652F6B88E100487F03 /* Supabase */ = {
+		DB7A28BB2F6F8D8300215352 /* Supabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DBBB225A2F6B88E100487F03 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			package = DB7A28B02F6F8D8300215352 /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Supabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = DBBB22442F6B85BB00487F03 /* Project object */;
+	rootObject = DB7A289A2F6F8D0B00215352 /* Project object */;
 }

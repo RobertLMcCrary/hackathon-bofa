@@ -11,6 +11,10 @@ struct TabsView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
+            DiscoverView()
+                .tabItem {
+                    Label("Discover", systemImage: "person")
+                }
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle")
