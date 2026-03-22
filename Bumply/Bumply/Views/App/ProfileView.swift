@@ -5,6 +5,8 @@ struct ProfileView: View {
     @State var username = ""
     @State var fullName = ""
     @State var website = ""
+    @State var activelyLookingFor = ""
+    @State var metadataString = ""
     
     @State var isLoading = false
     
@@ -20,6 +22,10 @@ struct ProfileView: View {
                     TextField("Website", text: $website)
                         .textContentType(.URL)
                         .textInputAutocapitalization(.never)
+                    TextField("Actively Looking For", text: $activelyLookingFor)
+                    TextField("Metadata (JSON)", text: $metadataString, axis: .vertical)
+                        .lineLimit(3...10)
+                        .font(.monospaced(.caption)())
                 }
                 
                 Section {
@@ -65,6 +71,7 @@ struct ProfileView: View {
             self.username = profile.username ?? ""
             self.fullName = profile.fullName ?? ""
             self.website = profile.website ?? ""
+            self.activelyLookingFor = profile.activelyLookingFor ?? ""
             
         } catch {
             debugPrint(error)
@@ -77,6 +84,7 @@ struct ProfileView: View {
             defer { isLoading = false }
             do {
                 let currentUser = try await supabase.auth.session.user
+
                 
                 try await supabase
                     .from("profiles")
@@ -84,7 +92,8 @@ struct ProfileView: View {
                         UpdateProfileParams(
                             username: username,
                             fullName: fullName,
-                            website: website
+                            website: website,
+                            activelyLookingFor: activelyLookingFor,
                         )
                     )
                     .eq("id", value: currentUser.id)

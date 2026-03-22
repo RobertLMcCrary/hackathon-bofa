@@ -7,7 +7,7 @@ struct TabsView: View {
     
     var body: some View {
         TabView {
-            HomeView()
+            HomeView(locationManager: locationManager)
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }

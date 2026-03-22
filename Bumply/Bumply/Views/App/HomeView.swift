@@ -1,7 +1,9 @@
 import SwiftUI
 import Supabase
+import CoreLocation
 
 struct HomeView: View {
+    @ObservedObject var locationManager: LocationManager
     @State private var profile: Profile?
     @State private var isLoading = false
     @State private var error: Error?
@@ -30,6 +32,22 @@ struct HomeView: View {
                     Text("No profile information.")
                         .foregroundStyle(.secondary)
                 }
+                
+                if let location = locationManager.userLocation {
+                    VStack(spacing: 8) {
+                        Text("Current Location")
+                            .font(.headline)
+                        Text("Lat: \(location.coordinate.latitude.formatted(.number.precision(.fractionLength(4))))")
+                        Text("Lon: \(location.coordinate.longitude.formatted(.number.precision(.fractionLength(4))))")
+                    }
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 12).fill(Color(.systemBackground).opacity(0.7)).shadow(radius: 4))
+                } else {
+                    Text("Location not available")
+                        .foregroundStyle(.secondary)
+                        .font(.caption)
+                }
+
                 Spacer()
             }
             .padding()

@@ -15,6 +15,18 @@ struct DiscoverUserCard: View {
                 .lineLimit(3)
                 .fixedSize(horizontal: false, vertical: true)
 
+            if let lookingFor = user.activelyLookingFor, !lookingFor.isEmpty {
+                HStack(alignment: .top) {
+                    Image(systemName: "magnifyingglass")
+                        //.foregroundStyle(.accent)
+                        .font(.caption)
+                    Text("Looking for: \(lookingFor)")
+                        .font(.caption)
+                        .foregroundStyle(.primary)
+                }
+                .padding(.vertical, 2)
+            }
+
             // Fixed height so this horizontal ScrollView doesn't expand vertically inside the
             // outer Discover ScrollView (nested scroll views need a bounded cross-axis size).
             ScrollView(.horizontal, showsIndicators: false) {

@@ -10,6 +10,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     override init() {
         super.init()
         manager.delegate = self
+        authorizationStatus = manager.authorizationStatus
         // Configure accuracy, distance filters, etc., here if needed.
         // manager.desiredAccuracy = kCLLocationAccuracyBest
     }

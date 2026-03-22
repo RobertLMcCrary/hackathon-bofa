@@ -7,7 +7,8 @@ enum DiscoverMockUsers {
             id: UUID(),
             name: "Morgan Lee",
             bio: "Building thoughtful mobile experiences. Coffee, SwiftUI, and clear copy.",
-            tags: ["iOS", "SwiftUI", "UX"]
+            tags: ["iOS", "SwiftUI", "UX"],
+            activelyLookingFor: "A co-founder for a fintech startup."
         ),
         DiscoverUser(
             id: UUID(),

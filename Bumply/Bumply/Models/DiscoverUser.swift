@@ -6,4 +6,6 @@ struct DiscoverUser: Identifiable, Hashable {
     let name: String
     let bio: String
     let tags: [String]
+    var activelyLookingFor: String? = nil
+    var metadata: [String: String]? = nil
 }
