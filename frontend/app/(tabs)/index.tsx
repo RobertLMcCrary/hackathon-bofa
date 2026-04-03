@@ -13,6 +13,8 @@ import { supabase } from '@/lib/supabase';
 import { signOut } from '@/services/auth';
 import type { Database } from '@/types/database';
 
+import { useBLE } from '@/hooks/useBLE';
+
 const MAP_DELTA = { latitudeDelta: 0.01, longitudeDelta: 0.01 };
 const MapView: any = Platform.OS === 'web' ? View : require('react-native-maps').default;
 const Marker: any = Platform.OS === 'web' ? View : require('react-native-maps').Marker;
@@ -58,6 +60,9 @@ export default function HomeScreen() {
     const [loadingProfiles, setLoadingProfiles] = useState(true);
     const [isMapInteracting, setIsMapInteracting] = useState(false);
     const user = session?.user;
+
+    //ble
+    //const { device, connected, scanning, startScan, disconnect } = useBLE();
 
     const mapRegion = useMemo(() => {
         if (!locationCoords) return null;
@@ -269,6 +274,8 @@ export default function HomeScreen() {
                         </View>
                     </View>
                 </View>
+
+                {/* rssi connection */}
             </ScrollView>
         </ThemedView>
     );

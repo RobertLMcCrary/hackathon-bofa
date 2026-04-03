@@ -1,5 +1,5 @@
-import { View, StyleSheet, ActivityIndicator, ScrollView, TouchableOpacity } from 'react-native';
-import { useLocalSearchParams, Stack } from 'expo-router';
+import { View, StyleSheet, ActivityIndicator, ScrollView, TouchableOpacity, Alert } from 'react-native';
+import { useLocalSearchParams, Stack, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import { ThemedText } from '@/components/themed-text';
@@ -11,6 +11,7 @@ type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 
 export default function UserProfileScreen() {
     const { id } = useLocalSearchParams<{ id: string }>();
+    const router = useRouter();
     const [profile, setProfile] = useState<Profile | null>(null);
     const [loading, setLoading] = useState(true);
     const [connectStatus, setConnectStatus] = useState<'Connect' | 'Request Sent'>('Connect');
@@ -105,6 +106,19 @@ export default function UserProfileScreen() {
                             {connectStatus}
                         </ThemedText>
                     </TouchableOpacity>
+
+                    <TouchableOpacity
+                        style={styles.demoMatchButton}
+                        onPress={() => {
+                            Alert.alert(
+                                "It's a match!",
+                                `You and ${profile.full_name || 'this user'} are close and have similar profiles. Bracelets linked.`,
+                            );
+                            router.push(`/match/${profile.id}`);
+                        }}
+                    >
+                        <ThemedText style={styles.demoMatchButtonText}>Trigger Demo Match</ThemedText>
+                    </TouchableOpacity>
                 </ThemedView>
             </ScrollView>
         </ThemedView>
@@ -190,5 +204,16 @@ const styles = StyleSheet.create({
     },
     connectButtonTextSent: {
         color: '#fff',
+    },
+    demoMatchButton: {
+        backgroundColor: '#FF9500',
+        paddingVertical: 12,
+        borderRadius: 12,
+        alignItems: 'center',
+    },
+    demoMatchButtonText: {
+        color: '#fff',
+        fontWeight: 'bold',
+        fontSize: 16,
     },
 });
